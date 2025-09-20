@@ -48,6 +48,6 @@ class User {
 $user = new User('John Doe');
 $task = new Task('to read a book');
 $user->assignTask($task);
-$task->complete();
 echo $task->getTitle();
+$task->complete();
 echo $task->getStatus();
