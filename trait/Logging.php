@@ -40,7 +40,7 @@ class User {
 
     }
     public function assignTask(Task $task){
-        $this->log("Task assigned to $this->name ({$task->getTitle()})");
+        $this->log("Task assigned to $this->name {$task->getTitle()}");
     }
     
 }
@@ -48,6 +48,6 @@ class User {
 $user = new User('John Doe');
 $task = new Task('to read a book');
 $user->assignTask($task);
-echo $task->getStatus();
 $task->complete();
+echo $task->getTitle();
 echo $task->getStatus();
